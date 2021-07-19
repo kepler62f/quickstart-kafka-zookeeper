@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "google/protobuf/timestamp.proto";
+
+package main.java.message;
+
+message Transaction {
+  optional string transaction_id = 1;
+  optional string account_number = 2;
+  optional string transaction_reference = 3;
+  optional google.protobuf.Timestamp transaction_datetime = 4;
+  optional double amount = 5;
+}
